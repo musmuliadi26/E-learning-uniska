@@ -1,0 +1,30 @@
+#dashboard {
+	margin-top: 90px;
+}
+
+.nav-ddosen:hover{
+	color: white;
+	background-color: #6c757d;
+}
+
+.nav-graph:hover{
+	color: white;
+	background-color: #6c757d;
+}
+.nav-dmhs:hover{
+	color: white;
+	background-color: #6c757d;
+}
+
+.nav-dkls:hover{
+	color: white;
+	background-color: #6c757d;
+}
+
+.tabel-dosen {
+	background-color: 	#f2f2f2;
+}
+
+.tabel-mhs {
+	background-color: 	#f2f2f2;
+}

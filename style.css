@@ -1,0 +1,278 @@
+/*reset css*/
+ul li {
+	list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+/*akhir reset css*/
+
+
+
+
+/*darkmode*/
+#dark {
+	background-color: #333333;
+	color: #bfbfbf;
+}
+
+#dark .navbar {
+	background-color: #262626;
+}
+
+#dark .sdatang {
+	background-color: #262626;
+}
+
+#dark .kperkuliahan {
+	background-color: #262626;
+}
+
+#dark .moduls {
+	background-color: #262626;
+}
+
+#dark .berita {
+	background-color: #262626;
+}
+
+#dark .footer {
+	background-color: #262626;
+}
+
+#dark .btn-mode {
+	color: #bfbfbf;
+}
+
+/*darkmode masuk(log In)*/
+#dark .form-masuk {
+	background-color: #262626;
+}
+
+#dark .btn-masuk {
+	color: #bfbfbf;
+}
+
+#dark .btn-buat-akun {
+	color: #bfbfbf;
+}
+
+/*akhir darkmode(log In)*/
+
+
+/*darkmode dashboard graph*/
+#dark .nav-graph {
+  color: #bfbfbf;
+}
+
+#dark .nav-graph:hover {
+  color: #e6e6e6;
+}
+
+#dark .nav-ddosen {
+  color: #bfbfbf;
+}
+
+#dark .nav-ddosen:hover {
+  color: #e6e6e6;
+}
+
+#dark .nav-dmhs {
+  color: #bfbfbf;
+}
+
+#dark .nav-dmhs:hover {
+  color: #e6e6e6;
+}
+
+#dark .nav-dkls {
+  color: #bfbfbf;
+}
+
+#dark .nav-dkls:hover {
+  color: #e6e6e6;
+}
+
+#dark .jmldosen {
+  background-color: #262626;
+}
+
+#dark .jmlmhs {
+  background-color: #262626;
+}
+/*akhir darkmode dashboard graph*/
+
+/*darkmode dashboard data dosen*/
+#dark .tabel-dosen {
+  background-color: #262626;
+  color: #bfbfbf;
+}
+
+#dark .tabel-mhs {
+  background-color: #262626;
+  color: #bfbfbf;
+}
+
+#dark .form-tdata {
+  background-color: #262626;
+}
+
+#dark .form-edata {
+  background-color: #262626;
+}
+/*akhir dashboard data dosen*/
+
+/*darkmode users mhs*/
+#dark .perkuliahan-yss-ikuti {
+  background-color: #262626;
+}
+
+#dark .pratinjau-mk {
+  background-color: #262626;
+}
+
+#dark .list-perkuliahan {
+  color: #bfbfbf;
+}
+
+#dark .nav-sberlangsung {
+  color: #bfbfbf;
+}
+
+#dark .nav-sberlangsung:hover {
+  color: #e6e6e6;
+}
+
+#dark .nav-adatang {
+  color: #bfbfbf;
+}
+
+#dark .nav-adatang:hover {
+  color: #e6e6e6;
+}
+
+#dark .nav-ylalu {
+  color: #bfbfbf;
+}
+
+#dark .nav-ylalu:hover {
+  color: #e6e6e6;
+}
+
+#dark .list-matakuliah {
+  color: #bfbfbf;
+}
+
+/*akhir darkmode users mhs*/
+#dark .nav-sselesai {
+  color: #bfbfbf;
+}
+
+#dark .nav-sselesai:hover {
+  color: #e6e6e6;
+}
+
+/*darkmode users dosen*/
+
+/*akhir darkmode users dosen*/
+/*akhir darkmode*/
+
+
+
+
+
+/*main*/
+.navbar, .sdatang, .kperkuliahan, .moduls, .berita, .footer, .form-masuk, .form-tdata, .form-edata, .jmldosen, .jmlmhs{
+	background-color: 	#f2f2f2;
+}
+
+#sambutan {
+	margin-top: 120px;
+}
+
+.berita {
+	height: 400px;
+}
+
+.footer {
+	height: 100px;
+}
+
+/*main masuk*/
+#form-masuk {
+	margin-top: 120px;
+}
+/*akhir main masuk*/
+
+/*akhir main*/
+
+
+
+
+
+/* Untuk Tablet */
+@media all and (max-width: 1200px) {
+	.modul {
+		width: 300px;
+	}
+
+	.kperkuliahan {
+  	margin-bottom: 20px;
+  }
+}
+
+/* Untuk nav */
+@media all and (max-width: 800px) {
+  .jgraph, .jddosen, .jdmhs, .jdkls{
+    display: none;
+  }
+}
+
+/* Untuk Smartphone/mobile */
+@media all and (max-width: 670px) {
+  .logo-header {
+  	width: 200px;
+  }
+
+  .modul {
+  	width: 250px;
+  }
+
+  #sambutan {
+  	font-size: 15px;
+  }
+
+  #sambutan, #fitur, #berita {
+  	margin-left: 5px;
+  	margin-right: 5px;
+  }
+/*bagian masuk(log In)*/
+  #masuk {
+  	height: 800px;
+  }
+/*akhir bagian masuk(log In)*/
+
+/*bagian daftar(sign up)*/
+  #daftar {
+  	height: 1000px;
+  }
+/*akhir bagian daftar(sign up)*/
+
+/*bagian admin*/
+  .logo-header {
+  	width: 150px;
+  }
+
+  .dashboard-graph, .dashboard-users-dosen, .dashboard-users-mhs {
+    height: 800px; 
+  }
+/*akhir bagian admin*/
+
+/*bagian users mhs*/
+.jnav-sberlangsung, .jnav-adatang, .jnav-ylalu{
+    display: none;
+  }
+/*akhir users mhs*/
+}

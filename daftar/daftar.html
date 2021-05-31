@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" id="daftar">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <title>Daftar | E-learning UNISKA</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img class="logo-header" src="../img/logo_header.png" width="260">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="../masuk/masuk.html">Masuk</a>
+            <a class="nav-link me-3" href="#daftar">Daftar</a>
+            <div class="dropdown">
+              <button class="btn btn-mode bg-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">mode
+              </button>
+              <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton1">
+                <li><button onclick="darkmode(false)" class="dropdown-item"><i class="bi bi-brightness-high-fill"></i></button></li>
+                <li><button onclick="darkmode(true)" class="dropdown-item"><i class="bi bi-moon-fill"></i></button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- form daftar -->
+    <section id="form-masuk">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h3>Daftar</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <form class="form-masuk p-4 rounded-3 shadow-sm mb-5">
+              <div class="mb-3">
+                <label for="nama-lengkap" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama-lengkap" aria-describedby="nama-lengkap">
+              </div>
+
+              <div class="mb-3">
+                <label for="nama-lengkap" class="form-label">Daftar Sebagai :</label>
+                <div class="btn-group col ms-auto d-flex" role="group" aria-label="Basic radio toggle button group">
+                  <input onclick="dosenMhs(false)" type="radio" class="btn-check" name="btnradio" id="dosen" autocomplete="off" checked>
+                  <label class="btn btn-outline-secondary" for="dosen">Dosen</label>
+
+                  <input onclick="dosenMhs(true)" type="radio" class="btn-check" name="btnradio" id="mahasiswa" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="mahasiswa">Mahasiswa</label>
+                </div>
+              </div>
+
+              <div class="nip-dosen mb-4">
+                <label for="NPM" class="form-label">NIP</label>
+                <input type="NPM" class="form-control" id="NPM">
+              </div>
+
+              <div class="npm-mhs mb-4 d-none">
+                <label for="NPM" class="form-label">NPM</label>
+                <input type="NPM" class="form-control" id="NPM">
+              </div>
+
+              <div class="fakultas mb-4 d-none">
+                <select name="fakultas" class="form-select" id="main_menu">
+                  <option selected>--- pilih Fakultas ---</option>
+                  <option value="fakom">Fakultas Ekonomi</option>
+                  <option value="fakum">Fakultas Hukum</option>
+                  <option value="faksospol">Fakultas Ilmu Sosial Politik</option>
+                  <option value="fkip">Fakultas Keguruan dan ilmu Pendidikan</option>
+                  <option value="fkm">Fakultas Kesehatan Masyarakat</option>
+                  <option value="fakper">Fakultas Pertanian</option>
+                  <option value="fsi">Fakultas Studi Islam</option>
+                  <option value="fatek">Fakultas Teknik</option>
+                  <option value="fti">Fakultas Teknologi Informasi</option>
+                  <option value="pascasarjana">Pascasarjana</option>
+                </select>
+              </div>
+
+              <div class="sub-fakultas mb-4 d-none">
+                <select name="fakultasprodi" class="form-select" id="sub_menu">
+                  <option selected>--- pilih Prodi ---</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label for="nama-lengkap" class="form-label">Jenis Kelamin :</label>
+                <div class="btn-group col ms-auto d-flex" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio1" id="laki-laki" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="laki-laki">Laki-laki</label>
+
+                  <input type="radio" class="btn-check" name="btnradio1" id="perempuan" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="perempuan">Perempuan</label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="form-label">Buat Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+
+              <div class="mb-5">
+                <label for="password" class="form-label">Komfirmasi Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+
+              <div class="d-grid gap-2 col mx-auto mb-3">
+                <button class="btn-masuk btn bg-light border-secondary" type="button">Daftar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir form daftar -->
+
+    <!-- footer -->
+    <section id="footer">
+      <div class="footer text-center">
+        <hr>
+        <p>©2021 Universitas Islam Kalimantan MAB Banjarmasin</p>
+      </div>
+    </section>
+    <!-- akhir footer --> 
+
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+   <!-- my js -->
+    <script src="../index.js"></script>
+
+  <!-- js form-fakultas -->
+    <script src="formfakultas.js"></script>
+
+  <!-- dosenMahasiswa js -->
+    <script src="dosenmahasiswa.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.main {
+	margin-top: 110px;
+}
+
+.nav-sberlangsung:hover{
+	color: white;
+	background-color: #6c757d;
+}
+
+.nav-sselesai:hover{
+	color: white;
+	background-color: #6c757d;
+}
+
+.list-perkuliahan:hover {
+  color: #262626;
+  opacity: 0.8;
+}
+
+.list-matakuliah:hover {
+  color: #262626;
+  opacity: 0.8;
+}
