@@ -87,11 +87,11 @@ a {
   color: #e6e6e6;
 }
 
-#dark .nav-dkls {
+#dark .nav-dmatkul {
   color: #bfbfbf;
 }
 
-#dark .nav-dkls:hover {
+#dark .nav-dmatkul:hover {
   color: #e6e6e6;
 }
 
@@ -225,7 +225,7 @@ a {
 
 /* Untuk nav */
 @media all and (max-width: 800px) {
-  .jgraph, .jddosen, .jdmhs, .jdkls{
+  .jgraph, .jddosen, .jdmhs, .jmatkul{
     display: none;
   }
 }
@@ -265,8 +265,12 @@ a {
   	width: 150px;
   }
 
-  .dashboard-graph, .dashboard-users-dosen, .dashboard-users-mhs {
+  .dashboard-matkul, .dashboard-users-dosen, .dashboard-users-mhs {
     height: 800px; 
+  }
+
+  .dashboard-graph {
+    height: 1000px;
   }
 /*akhir bagian admin*/
 

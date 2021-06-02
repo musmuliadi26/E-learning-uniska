@@ -14,6 +14,9 @@ function muatDaftarData(){
                         '</thead><tbody>';
              for(let i = 0; i < daftar_data_dosen.length; i++ ){
              	j = i + 1;
+
+                localStorage.setItem('jmhDataDsn', j);
+
              	data_app += '<tr>';
              	data_app += '<td>'+ j + '</td>'+
              				 '<td>'+ daftar_data_dosen[i].nama + ' </td>'+

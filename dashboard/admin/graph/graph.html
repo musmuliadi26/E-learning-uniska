@@ -69,7 +69,7 @@
                 <a class="nav-dmhs nav-link fs-3 rounded-3" href="../data mahasiswa/dmhs.html"><i class="bi bi-people-fill"></i><span class="jdmhs"> Data Mahasiswa</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-dkls nav-link fs-3 rounded-3" href="../data kelas/dkelas.html"><i class="bi bi-book"></i><span class="jdkls"> Data Kelas</span></a>
+                <a class="nav-dmatkul nav-link fs-3 rounded-3" href="../data matkul/dmatkul.html"><i class="bi bi-book"></i><span class="jmatkul"> Data Perkuliahan</span></a>
               </li>
             </ul>
           </div>
@@ -81,21 +81,30 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-5 mb-3">
             <div class="jmldosen card text-center">
               <div class="card-body">
                 <h5 class="card-title">JUMLAH DOSEN</h5>
-                <p class="card-text fs-1">1</p>
+                <p id="jmh-data-dsn" class="card-text fs-1">0</p>
                 <a href="../data dosen/ddosen.html" class="btn btn-secondary">Lihat Detail</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5 mb-3">
             <div class="jmlmhs card text-center">
               <div class="card-body">
                 <h5 class="card-title">JUMLAH MAHASISWA</h5>
-                <p class="card-text fs-1">23</p>
+                <p id="jmh-data-mhs" class="card-text fs-1">0</p>
                 <a href="../data mahasiswa/dmhs.html" class="btn btn-secondary">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="jmlmhs card text-center">
+              <div class="card-body">
+                <h5 class="card-title">JUMLAH PERKULIAHAN</h5>
+                <p class="card-text fs-1">0</p>
+                <a href="../data matkul/dmatkul.html" class="btn btn-secondary">Lihat Detail</a>
               </div>
             </div>
           </div>
@@ -115,6 +124,9 @@
 
     <!-- my js -->
     <script src="../../../index.js"></script>
+
+    <!-- js graph -->
+    <script src="graph.js"></script>
 
 
     <!-- boostrap js -->

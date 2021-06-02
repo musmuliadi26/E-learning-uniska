@@ -64,6 +64,8 @@ emain.addEventListener('change', function() {
 
 });
 
+
+
 function muatDaftarData(){
 	if(localStorage.daftar_data_mhs && localStorage.id_data_mhs){
 		daftar_data_mhs = JSON.parse(localStorage.getItem('daftar_data_mhs'));
@@ -81,6 +83,9 @@ function muatDaftarData(){
                         '</thead><tbody>';
              for(let i = 0; i < daftar_data_mhs.length; i++ ){
              	j = i + 1;
+
+                localStorage.setItem("jmhDataMhs", j);
+                
              	data_app += '<tr>';
              	data_app += '<td>'+ j + '</td>'+
              				 '<td>'+ daftar_data_mhs[i].nama + ' </td>'+
@@ -183,6 +188,7 @@ function hapusData(id){
     }
 }
 
+
 function gantiMenu(menu){
     if (menu == "list-data"){
         muatDaftarData();
@@ -199,3 +205,7 @@ function gantiMenu(menu){
         $('#list-data').hide();
     }
 }
+
+
+
+
