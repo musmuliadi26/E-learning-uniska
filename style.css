@@ -46,6 +46,10 @@ a {
 	color: #bfbfbf;
 }
 
+#dark .btn-user {
+  color: #bfbfbf;
+}
+
 /*darkmode masuk(log In)*/
 #dark .form-masuk {
 	background-color: #262626;

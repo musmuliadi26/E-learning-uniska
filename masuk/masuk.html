@@ -58,14 +58,17 @@
             <form class="form-masuk p-4 rounded-3 shadow-sm mb-5">
               <div class="mb-3">
                 <label for="username" class="form-label">Nama Pengguna</label>
-                <input type="text" class="form-control" id="username" aria-describedby="username">
+                <input type="text" class="form-control" id="username" aria-describedby="username" required>
               </div>
-              <div class="mb-5">
+              <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" class="form-control" id="password" required>
+              </div>
+              <div class="alert alert-danger alert-login d-none" role="alert">
+                <div><i class="bi bi-exclamation-triangle fs-4"></i> Kata sandi atau password anda salah!</div>
               </div>
               <div class="d-grid gap-2 col mx-auto mb-3">
-                <a href="#" class="btn-masuk bg-light btn">Masuk</a>
+                <a class="btn-masuk bg-light btn" onclick="login()">Masuk</a>
               </div>
               <div class="text-center mb-5">
                 <a href="#" class="text-reset">Lupa nama sandi atau password anda?</a>
@@ -94,5 +97,8 @@
 
     <!-- my js -->
     <script src="../index.js"></script>
+
+    <!-- my js -->
+    <script src="masuk.js"></script>
   </body>
 </html>
