@@ -59,6 +59,10 @@ a {
 	color: #bfbfbf;
 }
 
+#dark .btn-nav {
+  color: #bfbfbf;
+}
+
 #dark .btn-buat-akun {
 	color: #bfbfbf;
 }
@@ -253,9 +257,8 @@ a {
   	margin-right: 5px;
   }
 /*bagian masuk(log In)*/
-  #masuk {
-  	height: 800px;
-  }
+  #masuk .footer{
+    position: unset;  }
 /*akhir bagian masuk(log In)*/
 
 /*bagian daftar(sign up)*/
