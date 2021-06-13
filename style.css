@@ -110,6 +110,10 @@ a {
 #dark .jmlmhs {
   background-color: #262626;
 }
+
+#dark .jmlperkuliahan {
+  background-color: #262626;
+}
 /*akhir darkmode dashboard graph*/
 
 /*darkmode dashboard data dosen*/
@@ -183,8 +187,24 @@ a {
 }
 
 /*darkmode users dosen*/
-
 /*akhir darkmode users dosen*/
+
+/*darkmode dmatkul*/
+#dark .accordion-button {
+  background-color: #262626;
+  color: #bfbfbf ;
+}
+
+#dark .table-dmatkul {
+  color: #bfbfbf;
+}
+
+#dark .accordion-body{
+  background-color: #333333;
+  color: #bfbfbf;
+} 
+/*akhir darkmode dmatkul*/
+
 /*akhir darkmode*/
 
 
@@ -192,7 +212,19 @@ a {
 
 
 /*main*/
-.navbar, .sdatang, .kperkuliahan, .moduls, .berita, .footer, .form-masuk, .form-tdata, .form-edata, .jmldosen, .jmlmhs{
+.navbar, 
+.sdatang, 
+.kperkuliahan, 
+.moduls, 
+.berita, 
+.footer, 
+.form-masuk, 
+.form-tdata, 
+.form-edata, 
+.jmldosen, 
+.jmlmhs, 
+.jmlperkuliahan,
+.accordion-button{
 	background-color: 	#f2f2f2;
 }
 
