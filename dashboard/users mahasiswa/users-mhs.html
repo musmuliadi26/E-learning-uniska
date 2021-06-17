@@ -14,9 +14,6 @@
     <!-- my css -->
     <link rel="stylesheet" href="../../style.css">
 
-    <!-- users css -->
-    <link rel="stylesheet" href="users-mhs.css">
-
     <title>Beranda saya | E-learning UNISKA</title>
   </head>
   <body>
@@ -31,16 +28,17 @@
         </button>
         <div class="collapse navbar-collapse me-5" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link me-2" href="#"><h4><i class="bi bi-person-circle"></i> Musmuliadi</h4></a>
-            <a class="nav-link me-3" href="#"><h4><i class="bi bi-bell"></i></h4></a>
+            <a class="nav-link me-2 text-secondary" href="#"><i class="bi bi-bell fs-5"></i></a>
+            <a class="nav-link me-2 text-secondary" href="#"><i class="bi bi-chat fs-5"></i></a>
             <div class="dropdown">
-              <button class=" btn btn-mode bg-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">mode
+              <button class="btn btn-user dropdown-toggle me-3" type="button" id="dropdownbutton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle"></i> Musmuliadi
               </button>
-              <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton1">
-                <li><button onclick="darkmode(false)" class="dropdown-item"><i class="bi bi-brightness-high-fill"></i></button></li>
-                <li><button onclick="darkmode(true)" class="dropdown-item"><i class="bi bi-moon-fill"></i></button></li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownbutton2">
+                <li><a class="dropdown-item" href="../../index.html">Log out</a></li>
               </ul>
             </div>
+            <span onclick="setDarkMode()" id="darkBtn" class="mt-1"><h4><i class="bi bi-moon-fill"></i></h4></span>
           </div>
         </div>
       </div>
@@ -51,43 +49,57 @@
     <section class="dashboard-users-mhs">
       <div class="container main">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-5">
             <div class="card mb-3 perkuliahan-yss-ikuti">
               <div class="card-header text-center fs-5">
                 <i class="bi bi-display"></i> Perkuliahan yang diikuti
               </div>
               <div class="card-body">
-                <ul>
-                  <li><a href="#" class="list-perkuliahan"><i class="bi bi-journal-text"></i> Sistem Informasi Manajemen</a></li>
-                  <hr>
-                  <li><a href="#" class="btn btn-sm btn-secondary"> Gabung Kelas Baru</a></li>
-                </ul>
+                <div>
+                  <ul>
+                    <li class="mb-2"><a href="#" class="list-perkuliahan"><i class="bi bi-journal-text"></i> Sistem Informasi Manajemen</a></li>
+                    <li class="mb-2"><a href="#" class="list-perkuliahan"><i class="bi bi-journal-text"></i> Algoritma & Pemrograman 2</a></li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="gabung-kelas">
+                  <form id="form-gabung" class="pe-4 ps-4">
+                    <div class="text-center mb-3">
+                      <h5><i class="bi bi-plus-square"></i> Gabung kelas</h5>
+                    </div>
+                    <div id="name-group" class="from-group mb-2">
+                      <label for="nama-lengkap">Nama Kelas</label>
+                      <input type="text" class="form-control" id="nama" name="nama">
+                    </div>
+                    <div id="pw-group" class="form-group mb-2">
+                      <label for="NPM">Password</label>
+                      <input type="text" class="form-control" id="password" name="password">
+                    </div>
+                    <div class="">
+                      <input type="button" value="Gabung kelas" onclick="gabungKelas();" class="btn btn-secondary"/>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="card pratinjau-mk">
               <div class="card-header text-center fs-5">
                 <i class="bi bi-list-nested"></i> Pratinjau mata kuliah
               </div>
               <div class="card-body">
-                <ul class="nav justify-content-center fs-5">
-                  <li class="nav-item">
-                    <a class="nav-link nav-sberlangsung rounded-3" href="#"><i class="bi bi-play-fill"></i> <span class="jnav-sberlangsung">Sedang berlangsung</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-adatang rounded-3" href="nav list matakuliah/akan datang.html"><i class="bi bi-skip-end-fill"></i> <span class="jnav-adatang">Akan datang</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-ylalu rounded-3" href="nav list matakuliah/yang lalu.html"><i class="bi bi-skip-start-fill"></i> <span class="jnav-ylalu">Yang lalu</span></a>
-                  </li>
-                </ul>
-                <hr>
                 <ul class="fs-5">
-                  <li>
+                  <li class="mb-3">
                     <a class="list-matakuliah" href="#"><i class="bi bi-journal-text"></i> Sistem Informasi Manajemen</a>
                     <div class="progress ms-4">
                       <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <a class="list-matakuliah" href="#"><i class="bi bi-journal-text"></i> Algoritma & Pemrograman 2</a>
+                    <div class="progress ms-4">
+                      <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
                     </div>
                   </li>
                 </ul>

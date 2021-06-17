@@ -14,9 +14,6 @@
     <!-- my css -->
     <link rel="stylesheet" href="../../style.css">
 
-    <!-- users css -->
-    <link rel="stylesheet" href="users-dosen.css">
-
     <title>Beranda saya | E-learning UNISKA</title>
   </head>
   <body>
@@ -31,16 +28,17 @@
         </button>
         <div class="collapse navbar-collapse me-5" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link me-2" href="#"><h4><i class="bi bi-person-circle"></i> Nama Dosen</h4></a>
-            <a class="nav-link me-3" href="#"><h4><i class="bi bi-bell"></i></h4></a>
+            <a class="nav-link me-2 text-secondary" href="#"><i class="bi bi-bell fs-5"></i></a>
+            <a class="nav-link me-2 text-secondary" href="#"><i class="bi bi-chat fs-5"></i></a>
             <div class="dropdown">
-              <button class=" btn btn-mode bg-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">mode
+              <button class="btn btn-user dropdown-toggle me-3" type="button" id="dropdownbutton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle"></i> Nama dosen
               </button>
-              <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton1">
-                <li><button onclick="darkmode(false)" class="dropdown-item"><i class="bi bi-brightness-high-fill"></i></button></li>
-                <li><button onclick="darkmode(true)" class="dropdown-item"><i class="bi bi-moon-fill"></i></button></li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownbutton2">
+                <li><a class="dropdown-item" href="../../index.html">Log out</a></li>
               </ul>
             </div>
+            <span onclick="setDarkMode()" id="darkBtn" class="mt-1"><h4><i class="bi bi-moon-fill"></i></h4></span>
           </div>
         </div>
       </div>
@@ -51,37 +49,75 @@
     <section class="dashboard-users-dosen">
       <div class="container main">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-5">
             <div class="card mb-3 perkuliahan-yss-ikuti">
               <div class="card-header text-center fs-5">
                 <i class="bi bi-display"></i> Perkuliahan yang dibuat
               </div>
               <div class="card-body">
-                <ul>
-                  <li><a href="#" class="list-perkuliahan"><i class="bi bi-journal-text"></i>  Sistem Informasi Manajemen</a></li>
-                  <hr>
-                  <li><a href="#" class="btn btn-sm btn-secondary">Buat Kelas Baru</a></li>
-                </ul>
+                <div class="list-kelas mb-3">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <i class="bi bi-journal-text me-2"></i> Sistem Informasi Manajemen
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <h5>Password : SImanejemen2021</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <i class="bi bi-journal-text me-2"></i> Algoritma & Pemrograman 2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <h5>Password : AlgoP2</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="tambah-kelas">
+                  <form id="form-kelas" class="pe-4 ps-4">
+                    <div class="text-center mb-3">
+                      <h5><i class="bi bi-pencil-square"></i> Buat Kelas Baru</h5>
+                    </div>
+                    <div id="name-group" class="from-group mb-2">
+                      <label for="nama-lengkap">Nama Kelas</label>
+                      <input type="text" class="form-control" id="nama" name="nama">
+                    </div>
+                    <div id="pw-group" class="form-group mb-2">
+                      <label for="NPM">Password</label>
+                      <input type="text" class="form-control" id="password" name="password">
+                    </div>
+                    <div id="kpw-group" class="form-group mb-2">
+                      <label for="NPM">Konfirmasi Password</label>
+                      <input type="text" class="form-control" id="kpassword" name="kpassword">
+                    </div>
+                    <div class="">
+                      <input type="button" value="Buat kelas" onclick="simpanKelas();" class="btn btn-secondary"/>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="card pratinjau-mk">
               <div class="card-header text-center fs-5">
                 <i class="bi bi-list-nested"></i> Pratinjau mata kuliah
               </div>
               <div class="card-body">
-                <ul class="nav justify-content-center fs-5">
-                  <li class="nav-item">
-                    <a class="nav-link nav-sberlangsung rounded-3" href="#"><i class="bi bi-play-fill"></i> <span class="jnav-sberlangsung">Sedang berlangsung</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-sselesai rounded-3" href="nav list matakuliah/sudah selesai.html"><i class="bi bi-pause-fill"></i> <span class="jnav-adatang">Sudah Selesai</span></a>
-                  </li>
-                </ul>
-                <hr>
                 <ul class="fs-5">
-                  <li><a class="list-matakuliah" href="#"><i class="bi bi-journal-text"></i> Sistem Informasi Manajemen</a></li>
+                  <li class="mb-3"><a class="list-matakuliah" href="#"><i class="bi bi-journal-text"></i> Sistem Informasi Manajemen</a></li>
+                  <li class="mb-3"><a class="list-matakuliah" href="#"><i class="bi bi-journal-text"></i> Algoritma & Pemrograman 2</a></li>
                 </ul>
               </div>
             </div>
@@ -103,6 +139,8 @@
     <!-- my js -->
     <script src="../../index.js"></script>
 
+    <!-- my js -->
+    <script src="users-dosen.js"></script>
 
     <!-- boostrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

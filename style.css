@@ -46,155 +46,118 @@ a {
   color: #bfbfbf;
 }
 
-
-.dark .form-masuk {
-	background-color: #262626;
-}
-.dark .form-daftar {
-  background-color: #262626;
-}
-
-
-/*darkmode dashboard graph*/
-.dark .nav-graph {
-  color: #bfbfbf;
-}
-
-.dark .nav-graph:hover {
-  color: #e6e6e6;
-}
-
-.dark .nav-ddosen {
-  color: #bfbfbf;
-}
-
-.dark .nav-ddosen:hover {
-  color: #e6e6e6;
-}
-
-.dark .nav-dmhs {
-  color: #bfbfbf;
-}
-
-.dark .nav-dmhs:hover {
-  color: #e6e6e6;
-}
-
-.dark .nav-dmatkul {
-  color: #bfbfbf;
-}
-
-.dark .nav-dmatkul:hover {
-  color: #e6e6e6;
-}
-
-.dark .jmldosen {
-  background-color: #262626;
-}
-
-.dark .jmlmhs {
-  background-color: #262626;
-}
-
-.dark .jmlperkuliahan {
-  background-color: #262626;
-}
-/*end darkmode dashboard graph*/
+  /*darkmode login&signup*/
+  .dark .form-masuk {
+  	background-color: #262626;
+  }
+  .dark .form-daftar {
+    background-color: #262626;
+  }
+  /*end login&signup*/
 
 
-/*darkmode dashboard data dosen&mhs*/
-.dark .tabel-dosen {
-  background-color: #262626;
-  color: #bfbfbf;
-}
+  /*darkmode dashboard graph*/
+  .dark .nav-graph {
+    color: #bfbfbf;
+  }
 
-.dark .tabel-mhs {
-  background-color: #262626;
-  color: #bfbfbf;
-}
+  .dark .nav-graph:hover {
+    color: #e6e6e6;
+  }
 
-.dark .form-tdata {
-  background-color: #262626;
-}
+  .dark .nav-ddosen {
+    color: #bfbfbf;
+  }
 
-.dark .form-edata {
-  background-color: #262626;
-}
-/*end dashboard data dosen&mhs*/
+  .dark .nav-ddosen:hover {
+    color: #e6e6e6;
+  }
 
+  .dark .nav-dmhs {
+    color: #bfbfbf;
+  }
 
-/*darkmode dmatkul*/
-.dark .accordion-button {
-  background-color: #262626;
-  color: #bfbfbf ;
-}
+  .dark .nav-dmhs:hover {
+    color: #e6e6e6;
+  }
 
-.dark .table-dmatkul {
-  color: #bfbfbf;
-}
+  .dark .nav-dmatkul {
+    color: #bfbfbf;
+  }
 
-.dark .accordion-body{
-  background-color: #333333;
-  color: #bfbfbf;
-} 
-/*end darkmode dmatkul*/
+  .dark .nav-dmatkul:hover {
+    color: #e6e6e6;
+  }
 
+  .dark .jmldosen {
+    background-color: #262626;
+  }
 
-/*darkmode users mhs*/
-/*.dark .perkuliahan-yss-ikuti {
-  background-color: #262626;
-}
+  .dark .jmlmhs {
+    background-color: #262626;
+  }
 
-.dark .pratinjau-mk {
-  background-color: #262626;
-}
-
-.dark .list-perkuliahan {
-  color: #bfbfbf;
-}
-
-.dark .nav-sberlangsung {
-  color: #bfbfbf;
-}
-
-.dark .nav-sberlangsung:hover {
-  color: #e6e6e6;
-}
-
-.dark .nav-adatang {
-  color: #bfbfbf;
-}
-
-.dark .nav-adatang:hover {
-  color: #e6e6e6;
-}
-
-.dark .nav-ylalu {
-  color: #bfbfbf;
-}
-
-.dark .nav-ylalu:hover {
-  color: #e6e6e6;
-}
-
-.dark .list-matakuliah {
-  color: #bfbfbf;
-}*/
-
-/*end darkmode users mhs*/
+  .dark .jmlperkuliahan {
+    background-color: #262626;
+  }
+  /*end darkmode dashboard graph*/
 
 
-/*.dark .nav-sselesai {
-  color: #bfbfbf;
-}
+  /*darkmode dashboard data dosen&mhs*/
+  .dark .tabel-dosen {
+    background-color: #262626;
+    color: #bfbfbf;
+  }
 
-.dark .nav-sselesai:hover {
-  color: #e6e6e6;
-}
-*/
+  .dark .tabel-mhs {
+    background-color: #262626;
+    color: #bfbfbf;
+  }
 
-/*darkmode users dosen*/
-/*akhir darkmode users dosen*/
+  .dark .form-tdata {
+    background-color: #262626;
+  }
+
+  .dark .form-edata {
+    background-color: #262626;
+  }
+  /*end dashboard data dosen&mhs*/
+
+
+  /*darkmode dmatkul*/
+  .dark .accordion-button {
+    background-color: #262626;
+    color: #bfbfbf ;
+  }
+
+  .dark .table-dmatkul {
+    color: #bfbfbf;
+  }
+
+  .dark .accordion-body{
+    background-color: #333333;
+    color: #bfbfbf;
+  } 
+  /*end darkmode dmatkul*/
+
+
+  /*darkmode users mhs&dosen*/
+  .dark .perkuliahan-yss-ikuti {
+    background-color: #262626;
+  }
+
+  .dark .pratinjau-mk {
+    background-color: #262626;
+  }
+
+  .dark .list-perkuliahan {
+    color: #bfbfbf;
+  }
+
+  .dark .list-matakuliah {
+    color: #bfbfbf;
+  }
+  /*end darkmode users mhs&dosen*/
 
 /*end darkmode*/
 
@@ -214,7 +177,7 @@ a {
 .jmlmhs, 
 .jmlperkuliahan,
 .accordion-button{
-	background-color: 	#f2f2f2;
+	background-color:	#f2f2f2;
 }
 
 #sambutan {
@@ -229,15 +192,35 @@ a {
 	height: 100px;
 }
 
-/*main masuk*/
-#form-masuk {
-	margin-top: 120px;
+#darkBtn {
+  cursor: pointer;
 }
-/*akhir main masuk*/
+
+  /*main masuk*/
+  #form-masuk {
+  	margin-top: 120px;
+  }
+  /*end main masuk*/
+
+
+  /*main user*/
+  .main {
+    margin-top: 110px;
+  }
+
+  .list-perkuliahan:hover {
+    color: #737373;
+  }
+
+  .list-matakuliah:hover {
+    color: #737373;
+  }
+  /*end main user*/
 
 /*end main*/
 
 
+/*breakpoint*/
 /* Untuk Tablet */
 @media all and (max-width: 1200px) {
 	.modul {
@@ -249,7 +232,7 @@ a {
   }
 }
 
-/* Untuk nav */
+/* Untuk nav dashboard */
 @media all and (max-width: 800px) {
   .jgraph, .jddosen, .jdmhs, .jmatkul{
     display: none;
@@ -305,3 +288,4 @@ a {
   }
 /*end users mhs*/
 }
+/*end breakpoint*/
