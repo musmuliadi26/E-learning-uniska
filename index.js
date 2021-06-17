@@ -1,55 +1,49 @@
-var navbar = document.querySelector('.navbar');
-var btnMode = document.querySelector('.btn-mode');
+var navLink = document.querySelectorAll('.nav-link');
 var btnUser = document.querySelector('.btn-user');
 var btnMasuk = document.querySelector('.btn-masuk');
 var btnBuatAkun = document.querySelector('.btn-buat-akun');
 
 
 if(localStorage.getItem('theme') == 'tDark')
-	darkmode(true)
+	setDarkMode()
 
-function darkmode(isdark) {
+
+
+function setDarkMode() {
+	let iconDarkMode = '';
+	let isdark = document.body.classList.toggle('dark');
 	if (isdark) {
+		iconDarkMode = '<h4><i class="bi bi-brightness-high-fill"></i></h4>';
 		localStorage.setItem('theme', 'tDark');
 
-		document.body.setAttribute('id', 'dark');
+		// for (var i = 0; i <= navLink.length; i++) {
+		// 	navLink[i].classList.toggle('text-white');
+		// }
 
-		btnMode.classList.remove('bg-light');
-		btnMode.classList.add('bg-secondary');
+		// btnUser.classList.remove('bg-light');
+		// btnUser.classList.add('bg-secondary');		
 
-		btnUser.classList.remove('bg-light');
-		btnUser.classList.add('bg-secondary');
+		 // btnMasuk.classList.toggle('btn-secondary');
 
-		navbar.classList.remove('navbar-light');
-		navbar.classList.add('navbar-dark');
-		
-
-		btnMasuk.classList.remove('bg-light');
-		btnMasuk.classList.add('bg-secondary');
-
-		btnBuatAkun.classList.remove('bg-light');
-		btnBuatAkun.classList.add('bg-secondary');
+		// btnBuatAkun.classList.remove('bg-light');
+		// btnBuatAkun.classList.add('bg-secondary');
 
 	}else {
-		localStorage.setItem('theme', '');
+		iconDarkMode = '<h4><i class="bi bi-moon-fill"></i></h4>';
+		localStorage.removeItem('theme');
 
-		document.body.setAttribute('id', '');
+		// for (var i = 0; i <= navLink.length; i++) {
+		// 	navLink[i].classList.toggle('text-white');
+		// }
 
-		btnMode.classList.remove('bg-secondary');
-		btnMode.classList.add('bg-light');
+		// btnUser.classList.remove('bg-secondary');
 
-		btnUser.classList.remove('bg-secondary');
+		// btnMasuk.classList.remove('bg-secondary');
+		// btnMasuk.classList.add('bg-light');
 
-		navbar.classList.remove('navbar-dark');
-		navbar.classList.add('navbar-light');
-		localStorage.setItem('theme', '');
-
-
-		btnMasuk.classList.remove('bg-secondary');
-		btnMasuk.classList.add('bg-light');
-
-		btnBuatAkun.classList.remove('bg-secondary');
-		btnBuatAkun.classList.add('bg-light');
+		// btnBuatAkun.classList.remove('bg-secondary');
+		// btnBuatAkun.classList.add('bg-light');
 
 	}
+	document.getElementById('darkBtn').innerHTML = iconDarkMode;
 }

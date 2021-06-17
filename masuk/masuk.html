@@ -29,16 +29,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link btn-nav" href="#masuk">Masuk</a>
-            <a class="nav-link btn-nav me-3" href="../daftar/daftar.html">Daftar</a>
-            <div class="dropdown">
-              <button class="btn btn-mode bg-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">mode
-              </button>
-              <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton1">
-                <li><button onclick="darkmode(false)" class="dropdown-item"><i class="bi bi-brightness-high-fill"></i></button></li>
-                <li><button onclick="darkmode(true)" class="dropdown-item"><i class="bi bi-moon-fill"></i></button></li>
-              </ul>
-            </div>
+            <a class="nav-link text-secondary" href="#">Masuk</a>
+            <a class="nav-link text-secondary me-2" href="../daftar/daftar.html">Daftar</a>
+            <span onclick="setDarkMode()" id="darkBtn" class="mt-1"><h4><i class="bi bi-moon-fill"></i></h4></span>
           </div>
         </div>
       </div>
@@ -68,14 +61,14 @@
                 <div><i class="bi bi-exclamation-triangle fs-4"></i> Kata sandi atau password anda salah!</div>
               </div>
               <div class="d-grid gap-2 col mx-auto mb-3">
-                <a class="btn-masuk bg-light btn" onclick="login()">Masuk</a>
+                <a class="btn-masuk bg-secondary btn" onclick="login()">Masuk</a>
               </div>
               <div class="text-center mb-5">
-                <a href="#" class="text-reset">Lupa nama sandi atau password anda?</a>
+                <a href="#" class="text-reset text-decoration-underline">Lupa nama sandi atau password anda?</a>
               </div>
               <hr>
               <div class="d-grid gap-2 col-6 mx-auto mt-4">
-                <a href="../daftar/daftar.html" class="btn-buat-akun bg-light btn">Buat Akun</a>
+                <a href="../daftar/daftar.html" class="btn-buat-akun bg-secondary btn">Buat Akun</a>
               </div>
             </form>
           </div>

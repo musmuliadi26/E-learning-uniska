@@ -34,24 +34,17 @@
         </button>
         <div class="collapse navbar-collapse me-5" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link me-2" href="#"><i class="bi bi-bell fs-5"></i></a>
-            <a class="nav-link me-2" href="#"><i class="bi bi-chat fs-5"></i></a>
+            <a class="nav-link me-2 text-secondary" href="#"><i class="bi bi-bell fs-5"></i></a>
+            <a class="nav-link me-2 text-secondary" href="#"><i class="bi bi-chat fs-5"></i></a>
             <div class="dropdown">
-              <button class="btn btn-user bg-light dropdown-toggle me-3" type="button" id="dropdownbutton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn btn-user dropdown-toggle me-3" type="button" id="dropdownbutton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-circle"></i> Admin
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownbutton2">
                 <li><a class="dropdown-item" href="../../../index.html">Log out</a></li>
               </ul>
             </div>
-            <div class="dropdown">
-              <button class="btn btn-mode bg-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">mode
-              </button>
-              <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton1">
-                <li><button onclick="darkmode(false)" class="dropdown-item"><i class="bi bi-brightness-high-fill"></i></button></li>
-                <li><button onclick="darkmode(true)" class="dropdown-item"><i class="bi bi-moon-fill"></i></button></li>
-              </ul>
-            </div>
+            <span onclick="setDarkMode()" id="darkBtn" class="mt-1"><h4><i class="bi bi-moon-fill"></i></h4></span>
           </div>
         </div>
       </div>
