@@ -134,6 +134,10 @@ a {
     background-color: #262626;
   }
 
+  .dark .tabel-kelas {
+    color: #bfbfbf;
+  }
+
   .dark .list-perkuliahan {
     color: #bfbfbf;
   }
@@ -243,7 +247,8 @@ a {
   }
 /*bagian masuk(log In)*/
   #masuk .footer{
-    position: unset;  }
+    position: unset;  
+  }
 /*end bagian masuk(log In)*/
 
 /*bagian daftar(sign up)*/
@@ -257,7 +262,7 @@ a {
   	width: 150px;
   }
 
-  .dashboard-matkul, .dashboard-users-dosen, .dashboard-users-mhs {
+  .dashboard-matkul, .dashboard-users-mhs {
     height: 800px; 
   }
 
@@ -265,11 +270,12 @@ a {
     height: 1000px;
   }
 /*end bagian admin*/
-
-/*bagian users mhs*/
-.jnav-sberlangsung, .jnav-adatang, .jnav-ylalu{
-    display: none;
-  }
-/*end users mhs*/
+#userDosen .footer {
+  position: unset;
 }
+
+/*bagian user dosen*/
+
+/*end bagian user dosen*/
+
 /*end breakpoint*/
