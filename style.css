@@ -61,32 +61,16 @@ a {
     color: #bfbfbf;
   }
 
-  .dark .nav-graph:hover {
-    color: #e6e6e6;
-  }
-
   .dark .nav-ddosen {
     color: #bfbfbf;
-  }
-
-  .dark .nav-ddosen:hover {
-    color: #e6e6e6;
   }
 
   .dark .nav-dmhs {
     color: #bfbfbf;
   }
 
-  .dark .nav-dmhs:hover {
-    color: #e6e6e6;
-  }
-
   .dark .nav-dmatkul {
     color: #bfbfbf;
-  }
-
-  .dark .nav-dmatkul:hover {
-    color: #e6e6e6;
   }
 
   .dark .jmldosen {

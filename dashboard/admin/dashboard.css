@@ -4,21 +4,22 @@
 
 .nav-ddosen:hover{
 	color: white;
-	background-color: #6c757d;
+	background-color: #a1a8ae;
 }
 
 .nav-graph:hover{
 	color: white;
-	background-color: #6c757d;
+	background-color: #a1a8ae;
 }
+
 .nav-dmhs:hover{
 	color: white;
-	background-color: #6c757d;
+	background-color: #868e96;
 }
 
 .nav-dmatkul:hover{
 	color: white;
-	background-color: #6c757d;
+	background-color: #a1a8ae;
 }
 
 .tabel-dosen {

@@ -4,7 +4,7 @@ function muatDaftarData(){
 		var data_app = "";
 
 		if(daftar_data_dosen.length > 0){
-			data_app = '<table class="table table-bordered text-center tabel-dosen">';
+			data_app = '<div class="table-responsive"> <table class="table table-bordered text-center tabel-dosen">';
 			data_app += '<thead>'+
 							'<th>No.</th>'+
                             '<th>nama</th>'+
@@ -26,7 +26,7 @@ function muatDaftarData(){
                              '<td><a href="javascript:void(0)" onclick="editData(\''+daftar_data_dosen[i].id_data_dosen+'\')"><i class="bi bi-pencil-fill text-success p-3"></i></a></td>';
                 data_app += '</tr>';
              }
-             data_app += '</tbody></table>';
+             data_app += '</tbody></table></div>';
 		}else {
 			data_app = "Tidak ada data...";
 		}
