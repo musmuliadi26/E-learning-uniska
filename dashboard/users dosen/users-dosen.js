@@ -33,6 +33,7 @@ function muatDataKelas(){
 	        list_kelas += '</ul>'
 		}else {
 			data_kelas_app += 'Tidak ada perkuliahan yang dibuat...'
+            data_kelas_app += 'Tidak ada perkuliahan yang dibuat...'
 		}
 
 		$('#list-perkuliahan').html(data_kelas_app);
