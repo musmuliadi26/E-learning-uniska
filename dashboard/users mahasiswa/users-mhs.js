@@ -40,7 +40,7 @@ function gabungPerkuliahan(){
 
     data_kelas = JSON.parse(localStorage.getItem('data_kelas'));
     for( i in data_kelas){
-    	if( namap == data_kelas[i].nama && pass == data_kelas[i].password){
+    	if( namap === data_kelas[i].nama && pass === data_kelas[i].password){
     		if (localStorage.data_kls_mhs && localStorage.id_kls_mhs){
 		        data_kls_mhs = JSON.parse(localStorage.getItem('data_kls_mhs'));
 		        id_kls_mhs = parseInt(localStorage.getItem('id_kls_mhs'));

@@ -14,8 +14,6 @@ function muatDataKelas(){
 	        for(let i = 0; i < data_kelas.length; i++){
 	        	j = i + 1;
 
-	        	localStorage.setItem('jumlahDataKelas', j);
-
 	        	data_kelas_app += '<tr>';
 	        	data_kelas_app += '<td>'+ j + '</td>'+
 		             				 '<td>'+ data_kelas[i].nama + ' </td>'+
@@ -31,17 +29,30 @@ function muatDataKelas(){
 	        	list_kelas += '<li class="mb-3"><a class="list-matakuliah" href="#"><i class="bi bi-journal-text me-2"></i>'+ data_kelas[i].nama+'</a></li>';	
 	        }
 	        list_kelas += '</ul>'
+
+            data_perkuliahan = '<ol class="fs-3">';
+            for (let i = 0; i < data_kelas.length; i++) {
+                j = i + 1;
+
+                localStorage.setItem('jumlahDataKelas', j);
+
+                data_perkuliahan += '<li class="mb-2"><i class="bi bi-journal-text me-1 ms-2"></i>'+ data_kelas[i].nama +'</li>';
+            }
+            data_perkuliahan += '</ol>';
+
 		}else {
 			data_kelas_app += 'Tidak ada perkuliahan yang dibuat...'
-            data_kelas_app += 'Tidak ada perkuliahan yang dibuat...'
 		}
 
 		$('#list-perkuliahan').html(data_kelas_app);
 		$('#list-kelas').html(list_kelas);
+        $('#data-perkuliahan').html(data_perkuliahan);
         $('#list-perkuliahan').hide();
         $('#list-kelas').hide();
+        $('#data-perkuliahan').hide();
         $('#list-perkuliahan').fadeIn(100);
         $('#list-kelas').fadeIn(100);
+        $('#data-perkuliahan').fadeIn(100);
 	}
 }
 
